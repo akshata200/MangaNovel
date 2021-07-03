@@ -1,0 +1,70 @@
+body{
+    /* background-color: var(--bg-dark); */
+    background-color: white;
+    font-family: 'Bona Nova', serif;
+    width: 100%;
+    height: 100vh;
+}
+.novel-desc{
+    width: 100%;
+    height: 30%;
+    background:center / cover no-repeat url("../img/full-beginning-after-end.jpg");
+    background-color: rgba(0, 0, 0, 0.678);
+    background-blend-mode: hue;
+    color:white;
+    display: flex;
+    padding: 1em;
+}
+.novel-desc>img{
+    width: 35%;
+}
+.novel-desc .desc{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 8em;
+}
+.novel-desc .desc h1{
+    font-size: 2em;
+    margin: 1em 0;
+}
+.chapter-list{
+    width: 1024px;
+    margin:3em auto;
+}
+.chapter-list .table{
+    font-size: 1em;
+}
+.chapter-list .table thead{
+    font-size: 1.2em;
+}
+.chapter-list .table a{
+    text-decoration: none;
+    color: inherit;
+}
+.chapter-list .table tbody tr:hover{
+    background-color: aquamarine;
+}
+@media only screen and (max-width:1044px) {
+    .novel-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .novel-desc>img{
+        width: 50%;
+        display: none;
+    }
+    .novel-desc .desc{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .novel-desc .desc h1{
+        font-size: 1.5em;
+        margin: 0.6em 0;
+    }
+    .chapter-list{
+        width: 90%;
+        margin: 4em auto;
+    }
+}
